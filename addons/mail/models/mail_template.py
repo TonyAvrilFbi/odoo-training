@@ -311,8 +311,8 @@ class MailTemplate(models.Model):
         records.check_access_rights('read')
         records.check_access_rule('read')
 
-    def send_mail(self, res_id, force_send=False, raise_exception=False, email_values=None,
-                  email_layout_xmlid=False):
+    def send_mail(self, res_id,         force_send = False, raise_exception = False, email_values = None,
+        email_layout_xmlid = False):
         """ Generates a new mail.mail. Template is rendered on record given by
         res_id and model coming from template.
 
